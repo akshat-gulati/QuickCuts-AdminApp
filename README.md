@@ -1,0 +1,1 @@
+# QuickCuts-AdminApp
