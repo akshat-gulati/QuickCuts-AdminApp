@@ -1,25 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kiU-QM-6Y7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="X6l-1n-J11">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="kiU-QM-6Y7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCs-7I-rZw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1G9-6M-Dcy">
+                                <rect key="frame" x="60" y="311" width="273" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Cuts " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="YBH-AT-evk">
+                                        <rect key="frame" x="0.0" y="160" width="273" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quick cuts logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xls-KA-QbZ">
+                                        <rect key="frame" x="61.333333333333329" y="0.0" width="150.33333333333337" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xls-KA-QbZ" secondAttribute="height" id="MKQ-Fb-FMh"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YBH-AT-evk" firstAttribute="leading" secondItem="1G9-6M-Dcy" secondAttribute="leading" id="0nz-fA-Dfn"/>
+                                    <constraint firstItem="Xls-KA-QbZ" firstAttribute="top" secondItem="1G9-6M-Dcy" secondAttribute="top" id="0sb-lD-jlR"/>
+                                    <constraint firstItem="Xls-KA-QbZ" firstAttribute="width" secondItem="1G9-6M-Dcy" secondAttribute="width" multiplier="0.55" id="BoV-Iq-Mzf"/>
+                                    <constraint firstItem="YBH-AT-evk" firstAttribute="top" secondItem="Xls-KA-QbZ" secondAttribute="bottom" constant="10" id="CyQ-gr-JBR"/>
+                                    <constraint firstItem="Xls-KA-QbZ" firstAttribute="centerX" secondItem="1G9-6M-Dcy" secondAttribute="centerX" id="JOS-3w-CAv"/>
+                                    <constraint firstAttribute="trailing" secondItem="YBH-AT-evk" secondAttribute="trailing" id="OHl-SL-Kr9"/>
+                                    <constraint firstAttribute="bottom" secondItem="YBH-AT-evk" secondAttribute="bottom" constant="10" id="QAt-vW-wxR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I5T-dO-T6t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1G9-6M-Dcy" firstAttribute="leading" secondItem="I5T-dO-T6t" secondAttribute="leading" constant="60" id="9eC-fM-Aci"/>
+                            <constraint firstItem="1G9-6M-Dcy" firstAttribute="centerX" secondItem="iCs-7I-rZw" secondAttribute="centerX" id="YJW-lQ-gog"/>
+                            <constraint firstItem="1G9-6M-Dcy" firstAttribute="centerY" secondItem="iCs-7I-rZw" secondAttribute="centerY" id="Zid-Hw-J82"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GTc-qc-PFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="127" y="420"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Quick cuts logo" width="512" height="512"/>
+    </resources>
 </document>
