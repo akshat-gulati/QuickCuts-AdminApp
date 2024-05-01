@@ -17,6 +17,9 @@
 		FFAB9D982BE0EF3700630610 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB9D972BE0EF3700630610 /* HomeVC.swift */; };
 		FFEC87742BE20EEE00CC2413 /* AppointmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC87722BE20EEE00CC2413 /* AppointmentCollectionViewCell.swift */; };
 		FFEC87752BE20EEE00CC2413 /* AppointmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFEC87732BE20EEE00CC2413 /* AppointmentCollectionViewCell.xib */; };
+		FFEC87782BE2161A00CC2413 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC87762BE2161A00CC2413 /* AlbumCollectionViewCell.swift */; };
+		FFEC87792BE2161A00CC2413 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFEC87772BE2161A00CC2413 /* AlbumCollectionViewCell.xib */; };
+		FFEC877D2BE2171C00CC2413 /* AlbumVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC877C2BE2171C00CC2413 /* AlbumVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FFAB9D972BE0EF3700630610 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FFEC87722BE20EEE00CC2413 /* AppointmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFEC87732BE20EEE00CC2413 /* AppointmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentCollectionViewCell.xib; sourceTree = "<group>"; };
+		FFEC87762BE2161A00CC2413 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFEC87772BE2161A00CC2413 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		FFEC877C2BE2171C00CC2413 /* AlbumVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 			children = (
 				FFEC87722BE20EEE00CC2413 /* AppointmentCollectionViewCell.swift */,
 				FFEC87732BE20EEE00CC2413 /* AppointmentCollectionViewCell.xib */,
+				FFEC87762BE2161A00CC2413 /* AlbumCollectionViewCell.swift */,
+				FFEC87772BE2161A00CC2413 /* AlbumCollectionViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 			children = (
 				FFAB9D972BE0EF3700630610 /* HomeVC.swift */,
 				FF54D4AE2BDF99B10035BD0E /* ViewController.swift */,
+				FFEC877C2BE2171C00CC2413 /* AlbumVCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 			files = (
 				FFEC87752BE20EEE00CC2413 /* AppointmentCollectionViewCell.xib in Resources */,
 				FF54D4B42BDF99B20035BD0E /* Assets.xcassets in Resources */,
+				FFEC87792BE2161A00CC2413 /* AlbumCollectionViewCell.xib in Resources */,
 				FF54D4B72BDF99B20035BD0E /* Base in Resources */,
 				FF54D4B22BDF99B10035BD0E /* Base in Resources */,
 			);
@@ -205,6 +215,8 @@
 				FF54D4C82BDF9FB90035BD0E /* ViewExtensions.swift in Sources */,
 				FFEC87742BE20EEE00CC2413 /* AppointmentCollectionViewCell.swift in Sources */,
 				FF54D4AD2BDF99B10035BD0E /* SceneDelegate.swift in Sources */,
+				FFEC87782BE2161A00CC2413 /* AlbumCollectionViewCell.swift in Sources */,
+				FFEC877D2BE2171C00CC2413 /* AlbumVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

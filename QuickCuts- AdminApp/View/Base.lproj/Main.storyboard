@@ -829,14 +829,45 @@
         <!--Photos-->
         <scene sceneID="L7F-XU-5K2">
             <objects>
-                <viewController id="q2w-SU-5dU" sceneMemberID="viewController">
+                <viewController id="q2w-SU-5dU" customClass="AlbumVCViewController" customModule="QuickCuts__AdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WLX-G0-c47">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sId-9S-znC">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6J2-5k-PMt">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="614"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7i6-Wx-c7m">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="q2w-SU-5dU" id="uOi-Lt-7WL"/>
+                                            <outlet property="delegate" destination="q2w-SU-5dU" id="ogK-rt-3kO"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ges-3r-wvi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ges-3r-wvi" firstAttribute="bottom" secondItem="sId-9S-znC" secondAttribute="bottom" id="YmT-Mp-yHa"/>
+                            <constraint firstItem="sId-9S-znC" firstAttribute="leading" secondItem="ges-3r-wvi" secondAttribute="leading" id="fGG-PV-VsT"/>
+                            <constraint firstItem="sId-9S-znC" firstAttribute="top" secondItem="ges-3r-wvi" secondAttribute="top" id="oWp-9e-o6T"/>
+                            <constraint firstItem="ges-3r-wvi" firstAttribute="trailing" secondItem="sId-9S-znC" secondAttribute="trailing" id="yHg-MW-HMd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="GtD-Kj-1Dc"/>
+                    <connections>
+                        <outlet property="albumCollectionView" destination="6J2-5k-PMt" id="i28-M0-xag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kc-8o-oGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
