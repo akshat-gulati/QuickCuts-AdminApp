@@ -12,14 +12,45 @@
         <!--Appointments-->
         <scene sceneID="n1d-bS-cJ6">
             <objects>
-                <viewController id="6XQ-fs-aN9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6XQ-fs-aN9" customClass="HomeVC" customModule="QuickCuts__AdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zkc-iw-ANl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G4D-g4-eo0">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-Vz-kCM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="614"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JBV-Ab-cxg">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="6XQ-fs-aN9" id="MNL-4p-2tp"/>
+                                            <outlet property="delegate" destination="6XQ-fs-aN9" id="Rpc-63-TNq"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Xc-qN-gO2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Xc-qN-gO2" firstAttribute="bottom" secondItem="G4D-g4-eo0" secondAttribute="bottom" id="M8V-SA-4IJ"/>
+                            <constraint firstItem="G4D-g4-eo0" firstAttribute="top" secondItem="6Xc-qN-gO2" secondAttribute="top" id="RvT-GY-jXb"/>
+                            <constraint firstItem="G4D-g4-eo0" firstAttribute="leading" secondItem="6Xc-qN-gO2" secondAttribute="leading" id="oMd-sV-L1G"/>
+                            <constraint firstItem="6Xc-qN-gO2" firstAttribute="trailing" secondItem="G4D-g4-eo0" secondAttribute="trailing" id="olX-JE-7ST"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Appointments" id="wGy-FG-RT2"/>
+                    <connections>
+                        <outlet property="todayAppointmentCV" destination="ytJ-Vz-kCM" id="NHt-sr-RkB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0V-wr-zeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -824,7 +855,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHy-N9-zs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789" y="1085"/>
+            <point key="canvasLocation" x="3589" y="1085"/>
         </scene>
         <!--Booking-->
         <scene sceneID="87Z-Ab-uF1">
@@ -840,7 +871,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTE-nC-Q71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3021" y="1085"/>
+            <point key="canvasLocation" x="2833" y="1085"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OZd-s3-RMr">
@@ -927,7 +958,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EV-3g-vdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789" y="415"/>
+            <point key="canvasLocation" x="3589" y="415"/>
         </scene>
         <!--Booking-->
         <scene sceneID="Z1d-ST-Ddv">
@@ -949,7 +980,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJQ-fj-1MJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3021" y="415"/>
+            <point key="canvasLocation" x="2833" y="415"/>
         </scene>
     </scenes>
     <resources>
