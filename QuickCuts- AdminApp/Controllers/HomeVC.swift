@@ -11,7 +11,11 @@ class HomeVC: UIViewController {
 
     
     
-    @IBOutlet weak var todayAppointmentCV: UICollectionView!
+    @IBOutlet weak var todayAppointmentCV: UICollectionView!{
+        didSet{
+            todayAppointmentCV.registerCellFromNib(cellID: "AppointmentCollectionViewCell")
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -20,4 +24,20 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+}
+
+extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppointmentCollectionViewCell", for: indexPath) as! AppointmentCollectionViewCell
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let side = (collectionView.frame.width * 243) / 362
+       return CGSize(width: collectionView.frame.size.width, height: side)
+    }
+    
 }
