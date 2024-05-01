@@ -876,14 +876,38 @@
         <!--Profile-->
         <scene sceneID="ZZq-80-fEq">
             <objects>
-                <viewController id="Oee-8J-D3N" sceneMemberID="viewController">
+                <viewController id="Oee-8J-D3N" customClass="ProfileViewController" customModule="QuickCuts__AdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ey-rm-LMz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-FP-Jld">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jEG-Gd-GCw">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="614"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Oee-8J-D3N" id="ZWe-NT-YXL"/>
+                                            <outlet property="delegate" destination="Oee-8J-D3N" id="oLF-WN-9Qv"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="w87-bN-N6Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hgc-FP-Jld" firstAttribute="leading" secondItem="w87-bN-N6Z" secondAttribute="leading" id="5TY-fB-RVo"/>
+                            <constraint firstItem="w87-bN-N6Z" firstAttribute="bottom" secondItem="hgc-FP-Jld" secondAttribute="bottom" id="FL8-SR-6D8"/>
+                            <constraint firstItem="w87-bN-N6Z" firstAttribute="trailing" secondItem="hgc-FP-Jld" secondAttribute="trailing" id="gsG-JO-Tsw"/>
+                            <constraint firstItem="hgc-FP-Jld" firstAttribute="top" secondItem="w87-bN-N6Z" secondAttribute="top" id="j3r-Td-6Ct"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="mNJ-IK-pCX"/>
+                    <connections>
+                        <outlet property="profileTableView" destination="jEG-Gd-GCw" id="CGN-85-1jE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHy-N9-zs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
